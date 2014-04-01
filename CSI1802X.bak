@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:resistors_PL
 LIBS:transistors_PL
 LIBS:capacitors_PL
 LIBS:diodes_PL
@@ -94,7 +95,7 @@ $EndComp
 Wire Wire Line
 	2150 4000 3050 4000
 Wire Wire Line
-	3450 4000 4100 4000
+	3450 4000 4550 4000
 Wire Wire Line
 	3650 3900 3650 4000
 Connection ~ 3650 4000
@@ -103,8 +104,6 @@ Wire Wire Line
 Connection ~ 2850 4000
 Wire Wire Line
 	2150 3050 3050 3050
-Wire Wire Line
-	3450 3050 4050 3050
 Wire Wire Line
 	2850 3500 2850 3450
 Wire Wire Line
@@ -153,4 +152,120 @@ Connection ~ 4000 3050
 Wire Wire Line
 	4000 3750 4000 4000
 Connection ~ 4000 4000
+$Comp
+L NPN_EBC Q?
+U 1 1 533A0F94
+P 4850 3350
+F 0 "Q?" H 4850 3500 40  0000 R CNN
+F 1 "NPN_EBC" H 4850 3200 40  0000 R CNN
+F 2 "~" H 4850 3350 60  0000 C CNN
+F 3 "~" H 4850 3350 60  0000 C CNN
+	1    4850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN_EBC Q?
+U 1 1 533A0FA1
+P 5850 3650
+F 0 "Q?" H 5850 3800 40  0000 R CNN
+F 1 "NPN_EBC" H 5850 3500 40  0000 R CNN
+F 2 "~" H 5850 3650 60  0000 C CNN
+F 3 "~" H 5850 3650 60  0000 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0W25 R?
+U 1 1 533A0FE3
+P 4350 3700
+F 0 "R?" V 4430 3700 40  0000 C CNN
+F 1 "36k" V 4357 3701 40  0000 C CNN
+F 2 "~" V 4280 3700 30  0000 C CNN
+F 3 "~" H 4350 3700 30  0000 C CNN
+	1    4350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4000 4350 3950
+Connection ~ 4350 4000
+Wire Wire Line
+	4350 3050 4350 3450
+Connection ~ 4350 3050
+Wire Wire Line
+	4950 3150 4950 3050
+Connection ~ 4950 3050
+$Comp
+L R_0W25 R?
+U 1 1 533A10A5
+P 5300 3650
+F 0 "R?" V 5380 3650 40  0000 C CNN
+F 1 "18" V 5307 3651 40  0000 C CNN
+F 2 "~" V 5230 3650 30  0000 C CNN
+F 3 "~" H 5300 3650 30  0000 C CNN
+	1    5300 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3550 4950 3650
+Wire Wire Line
+	4950 3650 5050 3650
+Wire Wire Line
+	5550 3650 5650 3650
+Wire Wire Line
+	5950 3050 5950 3450
+Wire Wire Line
+	4650 3350 4350 3350
+Connection ~ 4350 3350
+Wire Wire Line
+	3450 3050 5950 3050
+$Comp
+L R_0W25 R?
+U 1 1 533A11D4
+P 5950 4200
+F 0 "R?" V 6030 4200 40  0000 C CNN
+F 1 "R_0W25" V 5957 4201 40  0000 C CNN
+F 2 "~" V 5880 4200 30  0000 C CNN
+F 3 "~" H 5950 4200 30  0000 C CNN
+	1    5950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0W25 R?
+U 1 1 533A11E3
+P 5950 4800
+F 0 "R?" V 6030 4800 40  0000 C CNN
+F 1 "R_0W25" V 5957 4801 40  0000 C CNN
+F 2 "~" V 5880 4800 30  0000 C CNN
+F 3 "~" H 5950 4800 30  0000 C CNN
+	1    5950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3850 5950 3950
+Wire Wire Line
+	5950 3900 7000 3900
+Connection ~ 5950 3900
+Wire Wire Line
+	5950 4450 5950 4550
+$Comp
+L C_CER C?
+U 1 1 533A1264
+P 6750 4450
+F 0 "C?" H 6770 4510 30  0000 L BNN
+F 1 "0.1uF" H 6770 4390 30  0000 L TNN
+F 2 "~" H 6788 4300 30  0000 C CNN
+F 3 "~" H 6750 4450 60  0000 C CNN
+	1    6750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3900 6750 4250
+Connection ~ 6750 3900
+Wire Wire Line
+	4550 5350 7000 5350
+Wire Wire Line
+	4550 4000 4550 5350
+Wire Wire Line
+	6750 4650 6750 5350
+Connection ~ 6750 5350
 $EndSCHEMATC
