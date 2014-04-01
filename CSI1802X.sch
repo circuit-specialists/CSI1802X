@@ -239,7 +239,7 @@ F 3 "~" H 6400 3550 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 2650 9700 2650
+	6200 2650 11550 2650
 $Comp
 L C_CER C?
 U 1 1 533A1264
@@ -255,7 +255,7 @@ Wire Wire Line
 	7000 2650 7000 3000
 Connection ~ 7000 2650
 Wire Wire Line
-	4800 4100 7650 4100
+	4800 4100 11600 4100
 Wire Wire Line
 	4800 2750 4800 4100
 Wire Wire Line
@@ -399,4 +399,88 @@ Text GLabel 8100 4650 1    60   Input ~ 0
 +5V
 Wire Wire Line
 	8100 4700 8100 4650
+$Comp
+L 79L05 U?
+U 1 1 533A1DC9
+P 8600 3250
+F 0 "U?" H 8400 3410 40  0000 L BNN
+F 1 "79L05" H 8800 3080 40  0000 R TNN
+F 2 "~" H 8600 3250 60  0000 C CNN
+F 3 "~" H 8600 3250 60  0000 C CNN
+	1    8600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_EL C?
+U 1 1 533A1DD6
+P 8150 2950
+F 0 "C?" H 8170 3010 30  0000 L BNN
+F 1 "1000uF" H 8170 2860 30  0000 L TNN
+F 2 "~" H 8188 2800 30  0000 C CNN
+F 3 "~" H 8150 2950 60  0000 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_EL C?
+U 1 1 533A1DE6
+P 8950 2950
+F 0 "C?" H 8970 3010 30  0000 L BNN
+F 1 "220uF" H 8970 2860 30  0000 L TNN
+F 2 "~" H 8988 2800 30  0000 C CNN
+F 3 "~" H 8950 2950 60  0000 C CNN
+	1    8950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_CER C?
+U 1 1 533A1DEC
+P 9250 2950
+F 0 "C?" H 9270 3010 30  0000 L BNN
+F 1 "0.1uF" H 9270 2890 30  0000 L TNN
+F 2 "~" H 9288 2800 30  0000 C CNN
+F 3 "~" H 9250 2950 60  0000 C CNN
+	1    9250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3300 7600 3300
+Wire Wire Line
+	8900 3300 9700 3300
+Wire Wire Line
+	9250 2750 9250 2650
+Connection ~ 9250 2650
+Wire Wire Line
+	8950 2750 8950 2650
+Connection ~ 8950 2650
+Wire Wire Line
+	8150 2750 8150 2650
+Connection ~ 8150 2650
+Wire Wire Line
+	8150 3150 8150 3300
+Connection ~ 8150 3300
+Wire Wire Line
+	8950 3150 8950 3300
+Connection ~ 8950 3300
+Wire Wire Line
+	9250 3150 9250 3300
+Connection ~ 9250 3300
+Text GLabel 9400 3400 3    60   Input ~ 0
+-5V
+Wire Wire Line
+	9400 3400 9400 3300
+Connection ~ 9400 3300
+Wire Wire Line
+	8600 3000 8600 2650
+Connection ~ 8600 2650
+Text GLabel 11350 2550 1    60   Input ~ 0
+Vout+
+Wire Wire Line
+	11350 2550 11350 2650
+Connection ~ 11350 2650
+Text GLabel 11350 4200 3    60   Input ~ 0
+Vout-
+Wire Wire Line
+	11350 4200 11350 4100
+Connection ~ 11350 4100
 $EndSCHEMATC
