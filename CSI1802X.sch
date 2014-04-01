@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:regulators_PL
 LIBS:resistors_PL
 LIBS:transistors_PL
 LIBS:capacitors_PL
@@ -238,7 +239,7 @@ F 3 "~" H 6400 3550 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 2650 7650 2650
+	6200 2650 9700 2650
 $Comp
 L C_CER C?
 U 1 1 533A1264
@@ -320,4 +321,82 @@ Wire Wire Line
 	6400 3800 6400 5100
 Wire Wire Line
 	6400 5100 7000 5100
+$Comp
+L 78L05 U?
+U 1 1 533A185C
+P 8500 2200
+F 0 "U?" H 8300 2360 40  0000 L BNN
+F 1 "78L05" H 8700 2030 40  0000 R TNN
+F 2 "~" H 8500 2200 60  0000 C CNN
+F 3 "~" H 8500 2200 60  0000 C CNN
+	1    8500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_EL C?
+U 1 1 533A186B
+P 8100 2400
+F 0 "C?" H 8120 2460 30  0000 L BNN
+F 1 "1000uF" H 8120 2310 30  0000 L TNN
+F 2 "~" H 8138 2250 30  0000 C CNN
+F 3 "~" H 8100 2400 60  0000 C CNN
+	1    8100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_EL C?
+U 1 1 533A187A
+P 8900 2400
+F 0 "C?" H 8920 2460 30  0000 L BNN
+F 1 "220uF" H 8920 2310 30  0000 L TNN
+F 2 "~" H 8938 2250 30  0000 C CNN
+F 3 "~" H 8900 2400 60  0000 C CNN
+	1    8900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_CER C?
+U 1 1 533A1889
+P 9200 2400
+F 0 "C?" H 9220 2460 30  0000 L BNN
+F 1 "0.1uF" H 9220 2340 30  0000 L TNN
+F 2 "~" H 9238 2250 30  0000 C CNN
+F 3 "~" H 9200 2400 60  0000 C CNN
+	1    9200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2150 9700 2150
+Wire Wire Line
+	9200 2200 9200 2150
+Connection ~ 9200 2150
+Wire Wire Line
+	8900 2200 8900 2150
+Connection ~ 8900 2150
+Wire Wire Line
+	8900 2600 8900 2650
+Connection ~ 8900 2650
+Wire Wire Line
+	9200 2600 9200 2650
+Connection ~ 9200 2650
+Wire Wire Line
+	8500 2450 8500 2650
+Connection ~ 8500 2650
+Wire Wire Line
+	7600 2150 8200 2150
+Wire Wire Line
+	8100 2200 8100 2150
+Connection ~ 8100 2150
+Wire Wire Line
+	8100 2600 8100 2650
+Connection ~ 8100 2650
+Text GLabel 9400 2050 1    60   Input ~ 0
++5V
+Wire Wire Line
+	9400 2150 9400 2050
+Connection ~ 9400 2150
+Text GLabel 8100 4650 1    60   Input ~ 0
++5V
+Wire Wire Line
+	8100 4700 8100 4650
 $EndSCHEMATC
