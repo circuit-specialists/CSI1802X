@@ -37,7 +37,7 @@ LIBS:valves
 LIBS:CSI1802X-cache
 EELAYER 27 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
 Title ""

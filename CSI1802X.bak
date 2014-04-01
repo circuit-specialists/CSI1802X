@@ -395,4 +395,8 @@ Text GLabel 9400 2050 1    60   Input ~ 0
 Wire Wire Line
 	9400 2150 9400 2050
 Connection ~ 9400 2150
+Text GLabel 8100 4650 1    60   Input ~ 0
++5V
+Wire Wire Line
+	8100 4700 8100 4650
 $EndSCHEMATC
