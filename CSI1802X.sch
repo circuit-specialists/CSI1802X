@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:resistors_PL
 LIBS:transistors_PL
 LIBS:capacitors_PL
 LIBS:diodes_PL
@@ -153,4 +154,26 @@ Connection ~ 4000 3050
 Wire Wire Line
 	4000 3750 4000 4000
 Connection ~ 4000 4000
+$Comp
+L NPN_EBC Q?
+U 1 1 533A0F94
+P 4850 3350
+F 0 "Q?" H 4850 3500 40  0000 R CNN
+F 1 "NPN_EBC" H 4850 3200 40  0000 R CNN
+F 2 "~" H 4850 3350 60  0000 C CNN
+F 3 "~" H 4850 3350 60  0000 C CNN
+	1    4850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN_EBC Q?
+U 1 1 533A0FA1
+P 5250 3650
+F 0 "Q?" H 5250 3800 40  0000 R CNN
+F 1 "NPN_EBC" H 5250 3500 40  0000 R CNN
+F 2 "~" H 5250 3650 60  0000 C CNN
+F 3 "~" H 5250 3650 60  0000 C CNN
+	1    5250 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:transistors_PL
 LIBS:capacitors_PL
 LIBS:diodes_PL
 LIBS:power
